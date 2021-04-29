@@ -1,0 +1,386 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0 auto;
+	padding: 0
+}
+
+li{list-style: none}
+
+/*a{*/
+	text-decoration: none;
+	
+}
+
+@font-face{
+	src:url(fonts/CATLinz_1.8.ttf);
+	font-family: cat
+}
+@font-face{
+	src:url(fonts/RedRose-Bold.ttf),url(fonts/RedRose-Light.ttf),url(fonts/RedRose-Regular.ttf);
+	font-family: redrose
+}
+
+@font-face{
+	src:url(fonts/misto.ttf),url(fonts/Misto.otf);
+	font-family: misto
+}
+
+@font-face{
+	src:url(fonts/Canopee.otf);
+	font-family: canopee;
+}
+
+@font-face{
+	src:url(fonts/Cyrene Regular.otf);
+	font-family:cyrene
+}
+
+@font-face{
+	src:url(fonts/Ace Lift Regular.ttf);
+	font-family: acelift
+}
+
+@font-face{
+	src:url(fonts/SVN-Avo.ttf);
+	font-family: avo
+}
+
+
+
+#wrapper{
+	width: 100%;
+	
+	
+}
+
+header{
+	position: relative
+}
+
+.thanh-menu{
+	width: 100%;
+	height: 100vh;
+	padding: 20px 60px;
+	box-sizing: border-box;
+	display: flex;
+/*	background: #f0e5c7;*/
+/*	background:#B3D5C2;*/
+	position: fixed;
+/*	flex-direction: column*/;
+
+	
+	
+}
+
+/*#sticky{position: fixed}*/
+
+.logo{
+	width:10%;
+	height: 80px;
+/*	background: #D6D3D3;*/
+
+}
+
+.logo img{
+	width: 80%
+}
+
+
+
+.icon{
+	width: 10%;
+	height: 80px;
+/*	background:#CAC9C9;*/
+	text-align: center;
+		
+	
+}
+.icon img{
+	width: 95%;
+transition-duration: 0.9s;
+
+/*.icon img:hover{*/
+	}
+
+.icon img:hover{
+	transform: rotate(90deg)
+}
+
+.menu{
+	width: 80%;
+	height: 80px;
+	margin-left: 50px
+/*	background:#E7E7E7;*/
+
+	
+}
+
+.menu ul{
+	list-style: none;
+	text-align: center
+}
+.menu>ul >li{
+	display: inline-block;
+	margin-right: 50px;
+	line-height:60px;
+	transition-duration: 0.2s; 
+	position: relative
+}
+
+.menu ul li a{
+	color: #000000;
+	text-decoration: none;
+	font-size: 25px;
+/*	font-family: cyrene;*/
+	font-family: canopee;
+/*	font-family: misto;*/
+	
+	
+}
+
+.menu ul li:hover{
+	transform: rotate(-10deg) scale(1.4);
+}
+
+.menu>ul>li>ul{
+	display: none;
+	position: absolute;
+}
+
+.menu>ul>li:hover ul{
+	display: block
+}
+
+
+.home{
+	width: 100%;
+	height: 100vh;
+	background:#f0e5c7;
+	padding: 125px 0;
+/*	box-sizing: border-box;*/
+	text-align: center;
+		position: static
+	
+	
+}
+
+.home img{
+	width: 60%;
+	position: relative
+
+
+}
+
+.icon .xoay{
+	width: 180px;
+	position: absolute;
+	z-index: 10;
+	top: 140px;
+	left:999px;
+	animation: xoay-tron 6.5s infinite linear 
+}
+
+@keyframes xoay-tron{
+	from{
+		transform: rotate(0deg)
+	}
+	to{
+		transform: rotate(360deg)
+	}
+}
+
+
+.icon .smile{
+	width: 190px;
+	position: absolute;
+	z-index: 10;
+	bottom:110px;
+	right: 970px;
+	animation: xoayy 2s infinite linear alternate
+}
+
+@keyframes xoayy{
+	
+	0%{
+		transform: rotate(10deg)
+	}
+	
+	50%{
+		transform: rotate(-40deg)
+	}
+	100%{
+		transform: rotate(20deg)
+	}
+}
+
+.about{
+	width: 100%;
+	height: 100vh;
+/*	background:#f0e5c6;*/
+	background:#3cb54a;
+	padding:0 40px 0 40px;
+	box-sizing: border-box;
+	text-align: center;
+     justify-content:flex-end;
+	align-items:flex-end;
+	ddisplay: flex;
+		
+	
+	
+	
+	
+	}
+
+.about img{
+	width: 55%;
+	margin-top: 60px
+}
+
+.more{
+	width:100%;
+	height:100px;
+/*	background: pink;*/
+	margin-bottom: ;
+	position: relative;
+	z-index: 11
+
+	
+	
+	
+	
+}
+.more .mt{
+	width: 13%;
+	position: absolute;
+	z-index: 10;
+	top:1550px;
+	left:660px
+	
+	
+	
+	
+}
+
+
+
+
+.more span {
+	
+	font-size: 30px;
+	font-family: canopee;
+}
+	
+.more li a{
+	font-family:canopee;
+	font-size: 30px;
+	color:#000000
+}	
+.more  ul li{
+/*	display: inline-block*/;
+	
+}	
+
+.more ul{
+	list-style: none;
+	
+}
+	
+
+.portfolio{
+	width: 100%;
+	height:200vh;
+	background:#f0e5c7;
+/*	background:pink;*/
+	padding: ;
+	box-sizing: border-box;
+	text-align: center;
+	position: static
+	
+	
+	
+	
+	
+}
+
+.portfolio img{
+	width: 60%;
+	margin-top: 70px;
+
+	
+}
+
+.portfolio .petrichor{width: 70%;
+	
+}
+
+
+
+.skills{
+	width:100%;
+	height:100vh;
+	background:#f0e5c6;
+		text-align: center
+	
+}
+
+.skills img{
+	width: 65%;
+	margin-top: ;
+	
+	
+}
+
+.skills .3{
+	width: 10%;
+	
+	
+}
+
+/*.clear-ski{*/
+	width: 100%; 
+	height: 50px
+}
+.footer{
+	width:100%;
+	height:170vh;
+	background:#3d5ba9;
+
+	
+}
+.footer-chua{
+	width:100%;
+	height:170vh;
+	background:#3d5ba9;
+
+/*	text-align: center*/
+	
+}
+.clear{
+	width:100%;
+	height:160px;
+	background:#3d5ba9
+}
+
+.box , .box2{
+	width:100%;
+	height:70px;
+	background:#ffffff
+}
+
+.box img{
+	width: 80%
+}
+.box2 img{
+    width: 180%;
+	margin-left: 100px
+}
+
+.chua-hinh img{
+	width: 100%;
+	margin-top: 180px;
+/*	margin-left: 70px*/
+}
+
+
+
